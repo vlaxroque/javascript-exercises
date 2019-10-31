@@ -39,10 +39,10 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // Declare "someVariable" in way so that the declaration is NOT hoisted.
-            // ✏️ ADD CODE HERE ✏️
-
+            // ✏️ ADD CODE HERE
+            let someVariable;
             ////////////////////////////////////////////////////////////////////
-
+             someVariable = undefined;
             expect(someVariable).to.equal(undefined);
         });
     });
@@ -51,9 +51,8 @@ describe("basics", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
-            ////////////////////////////////////////////////////////////////////
-
+            var someVariable = undefined;
+            /////////////////////////////////////////////////////////////////
             expect(typeof someVariable).to.equal("undefined");
             // Notice the difference:
             // == does a loose equality check
